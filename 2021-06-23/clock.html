@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      margin: 0 auto;
+      border-radius: 50%;
+      box-sizing: border-box;
+      background-color: rgb(177, 177, 177);
+    }
+    .mono {
+      z-index: 1;
+      display: inline-block;
+      position: absolute;    
+      top: 0;
+      left: 47.5%;  
+      width: 5%;
+      height: 100%;
+      text-align: center;
+      font-weight: bolder;
+    }
+    .mono:nth-child(1) {
+      transform: rotateZ(30deg);
+    }
+    .mono:nth-child(2) {
+      transform: rotateZ(60deg);
+    }
+    .mono:nth-child(3) {
+      transform: rotateZ(90deg);
+    }
+    .mono:nth-child(4) {
+      transform: rotateZ(120deg);
+    }
+    .mono:nth-child(5) {
+      transform: rotateZ(150deg); 
+    }
+    .mono:nth-child(6) {
+      transform: rotateZ(180deg);
+    }
+    .mono:nth-child(7) {
+      transform: rotateZ(210deg);
+    }
+    .mono:nth-child(8) {
+      transform: rotateZ(240deg);
+    }
+    .mono:nth-child(9) {
+      transform: rotateZ(270deg);
+    }
+    .mono:nth-child(10) {
+      transform: rotateZ(300deg);
+    }
+    .mono:nth-child(11) {
+      transform: rotateZ(330deg);
+    }
+    #hour {
+      position: absolute;
+      left: 48%;
+      width: 4%;
+      height: 100%;
+      display: inline-block;
+
+      animation-name: hour;
+      animation-duration: 216000s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    @keyframes hour {
+      from {transform: rotateZ(0) ;}
+      to {transform: rotateZ(360deg);}
+    }
+    #hour p {
+      width: 100%;
+      height: 50%;
+      margin: 0;
+      box-sizing: border-box;
+      background-color: rgb(250, 229, 39);
+    }
+    #minit {
+      position: absolute;
+      left: 49%;
+      width: 2%;
+      height: 100%;
+      display: inline-block;
+
+      animation-name: minit;
+      animation-duration: 3600s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    @keyframes minit {
+      from {transform: rotateZ(0) ;}
+      to {transform: rotateZ(360deg);}
+    }
+    #minit p {
+      position: relative;
+      width: 100%;
+      height: 40%;
+      margin: 0;
+      margin-top: 50px;
+      box-sizing: border-box;
+      background-color: rgb(189, 111, 23);
+    }
+    #sec {
+      position: absolute;
+      left: 49.5%;
+      width: 1%;
+      height: 100%;
+
+      display: inline-block;
+      animation-name: sec;
+      animation-duration: 60s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    @keyframes sec {
+      from {transform: rotateZ(0) ;}
+      to {transform: rotateZ(360deg);}
+    }
+    #sec p {
+      width: 100%;
+      height: 50%;
+      margin: 0;
+      box-sizing: border-box;
+      background-color: crimson;
+    }
+    #dot {
+      position: absolute;
+      top: 45%;
+      left: 45%;
+      display: inline-block;
+      width: 10%;
+      height: 10%;
+      border-radius: 50%;
+      background-color: #222;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <span class="mono">1</span>
+    <span class="mono">2</span>
+    <span class="mono">3</span>
+    <span class="mono">4</span>
+    <span class="mono">5</span>
+    <span class="mono">6</span>
+    <span class="mono">7</span>
+    <span class="mono">8</span>
+    <span class="mono">9</span>
+    <span class="mono">10</span>
+    <span class="mono">11</span>
+    <span class="mono">12</span>
+    <span id="hour">
+      <p></p>
+    </span>
+    <span id="minit">
+      <p></p>
+    </span>
+    <span id="sec">
+      <p></p>
+    </span>
+    <span id="dot"></span>
+  </div>
+</body>
+</html>
