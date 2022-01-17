@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script src="https://chancejs.com/chance.js"></script>
+  <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
+  <script>
+    let answer = [];
+    let date = [];
+    let time = [];
+
+    for (var i = 0; i < 100; i++) {
+      date.push(
+        chance.date({
+          string: true,
+          american: false
+        }).split('/').reverse().join('-'));
+
+      time.push(
+        chance.hour({
+          twentyfour: true
+        }) + ':' + chance.minute());
+    }
+
+    for (var i = 0; i < 100; i++) {
+      let daytime = date[i] + ' ' + time[i];
+      answer.push(moment(daytime).format('YYYY년 MM월 DD일 HH시 mm분'));
+    }
+    console.log(answer);
+  </script>
+</body>
+
+</html>
