@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.min.js"></script>
+    <script>
+      const socket = io("http://27.35.56.229:9990/");
+    </script>
+  </head>
+  <body>
+    <script>
+      socket.on('message', message => {
+        console.log(message);
+      });     
+        let arr = [0,1,2,3];
+        let obj = {
+          name: 'DIO',
+          position: 'top'
+        }
+        // setInterval(() => {
+        //   socket.emit('message', obj.position); 
+        //   socket.emit('arr', arr);
+        //   socket.emit('obj', obj);
+        //   socket.emit('message', '찰싹');
+        //   // socket.emit('slack', '하앙');
+        // }, 5000)
+    </script>
+  </body>
+</html>
