@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>project14</title>
+</head>
+
+<body>
+  <div id="wrap">
+    <p>안녕하세요 개발자 지망생입니다.</p>
+    <p>잘 부탁드려요</p>
+    <p>이번 과제 힘들군여</p>
+  </div>
+  <script>
+    let wrap = document.getElementById('wrap');
+    wrap.style.backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+    wrap.style.width = parseInt(Math.random() * 1000) + 'px'
+  </script>
+  <script src="./server.js"></script>
+</body>
+
+</html>
