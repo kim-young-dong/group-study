@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./project7.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.min.js"></script>
+  <script>
+    const socket = io("http://27.35.56.229:9990/");
+  </script>
+  <title>Document</title>
+</head>
+
+<body>
+  <script src="https://chancejs.com/chance.js"></script>
+  <div id="container">
+    <div id="message">
+      <ul>
+
+      </ul>
+    </div>
+    <div id="chating">
+      <textarea name="" id="" cols="30" rows="10"  onkeydown="enterkey()"></textarea>
+      <article>
+        <span>
+          <input type="submit" value="닉네임 변경" onclick="changeName()">
+        </span>
+        <span>
+          <input type="submit" value="전송" onclick="sendMessage()">
+        </span>
+      </article>
+    </div>
+  </div>
+  <script src="./project7.js"></script>
+</body>
+
+</html>
