@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.min.js"></script>
+    <script>
+      const socket = io("http://27.35.56.229:9990/");
+    </script>
+  </head>
+  <body>
+    <script>
+      socket.on('message', message => {
+        console.log(message)
+      })
+
+      socket.emit('message', '안녕하세요!')
+      socket.emit('slack', '안녕하세요! 슬랙 봇 테스트입니다.')        
+      socket.emit('sex', '섹스!')
+
+    </script>
+  </body>
+</html>
