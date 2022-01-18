@@ -14,7 +14,7 @@ function updateOne(id, req) {
     console.log(err);
   }
 }
-updateOne('6141f70a7c1f2d6db47d3d2b', 'hello');
+// updateOne('6141f70a7c1f2d6db47d3d2b', 'hello');
 
 function deleteOne(id) {
   try {

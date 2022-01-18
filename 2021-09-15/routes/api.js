@@ -5,12 +5,7 @@ var User = require('../models/user.schema.js');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.send('g')
-});
-
-router.get('/good', async function(req, res, next) {
-  let users = await User.find();
-  res.send(users);
+  res.send('hello world')
 });
 
 router.get('/generate', async function(req, res, next) {
