@@ -37,7 +37,7 @@ function put(content) {
     console.log(err);
   }
 }
-put('자지꼬추');
+put('러쉬');
 
 function del() {
   try {
