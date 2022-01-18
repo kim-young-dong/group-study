@@ -81,4 +81,60 @@
     socketId: '1234-5678-1234'
 }
 ```  
+### 2021-08-03
+#### axios 모듈을 써서 HTTP 요청을 수행하여, 게시판에 글을 작성, 수정, 삭제해보세요.
+  
+### 2021-08-09
+#### 08-07 모임에서의 결과물로 수정/삭제 구현하기.
+1. 리스트에서 게시글을 클릭하면 /article/asdfasdff123 식의 URL을 가지는 페이지로 이동할 것. (실습 때 router.js 는 구현했음)
+2. URL에 써있는 id는 article의 _id 를 사용할 것
+3. Post.vue 에서 $route.params.id 를 사용하여 서버에서 게시글을 불러와 input / textarea에 데이터를 보여줄 것. (수정하기 위해 현재 데이터를 보여줌)
+4. Post 버튼을 2분할하여, Edit / Delete 로 각각 수정/삭제를 담당하는 버튼으로 만든다.
+5. Edit 버튼으로 서버에 수정요청도 보낼 수 있도록 구현한다.
+6. Delete 버튼으로 서버에 삭제요청도 보낼 수 있도록 구현한다.
+
+### 2021-08-17
+#### 기존 Vue 프로젝트에서, List.vue의 카드 요소를 Vue컴포넌트화 시켜 List.vue의 코드를 단축하기
+1. Article.vue로 컴포넌트를 만들 것
+2. Article.vue는 아래와 같은 내용을 갖습니다.
+ - article props
+ - .article 엘레먼트
+3. List.vue에서 <Article :article="article"/> 처럼, article props를 넘겨주어 자식컴포넌트에게 데이터를 바인딩해줍니다.
+  
+### 2021-08-23
+#### 버튼을 누르면 모달이 나오고 닫기 버튼을 눌러 모달을 닫아봅시다.
+1. 버튼으로 모달을 열어야합니다.
+2. 모달은 컴포넌트로 만들어야 합니다.
+3. 버튼은 컴포넌트로 만들어야 합니다.
+4. 모달에 버튼 컴포넌트를 사용하여 닫기 버튼을 만들어야 합니다.
+5. 모달의 내용은 Slot을 이용하여, 모달 컴포넌트 밖에서 작성하여야 합니다.
+  
+### 2021-08-26
+#### Zerocho님의 강좌 2개를 따라해보면서, Node.js로 웹 서버를 간단하게 만들어보고 웹 서버의 동작 원리를 알아봅시다.
+  -https://www.zerocho.com/category/NodeJS/post/57774a8eacbd2e9803de0195
+  -https://www.zerocho.com/category/NodeJS/post/5787408cc27c3ae07521f848
+1. 위 두 예제를 따라한 후, 자신만의 HTML을 작성하여 자기소개 페이지를 띄운 후, server.js 와 index.html 을 스레드에 제출합니다
+  
+### 2021-09-02
+#### 위 과제에 이어서 웹서버로 간단하게 Server Side Rendering을 구현해봅시다.
+1. 새로고침할 때마다 랜덤한 색깔의 랜덤한 크기의 DIV가 렌더링되어야 합니다.
+  
+### 2021-09-15
+#### 수업 때 진행했던 소스코드를 토대로 아래와 같은 API를 만들어봅시다.
+1. PUT /user/:id : req.params.id 를 _id  로 가진 User를 수정하는 API
+2. GET /user/:id : req.params.id 를 _id  로 가진 User를 조회하는 API
+3. DELETE /user/:id : req.params.id 를 _id  로 가진 User를 삭제하는 API
+  
+### 2021-09-30
+#### heroku 서비스에 자신만의 웹서버를 배포(deploy)해봅시다. 
+#### 관련 글은 검색하면 아주 잘 나오니 자유롭게 검색하여 결과물은 url로 제출하면 됩니다!
+1. express 서버를 만들어 올려야합니다.
+2. 페이지는 / 하나만 있어도 됩니다.
+3. 페이지에 자신만의 내용이 있어야 합니다.
+4. github 연동을 통해 올립니다. (권장)
+
+링크 - https://project16-hello-world.herokuapp.com/
+  
+  
+  
   
