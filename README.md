@@ -133,7 +133,7 @@
 3. 페이지에 자신만의 내용이 있어야 합니다.
 4. github 연동을 통해 올립니다. (권장)
 
-링크 - https://project16-hello-world.herokuapp.com/
+링크 - hhttps://project-16.herokuapp.com/
   
   
   
